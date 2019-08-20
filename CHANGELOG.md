@@ -1,3 +1,164 @@
+#### 0.12.1 (2019-08-13)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([cc5e9dfc](https://github.com/lykmapipo/env/commit/cc5e9dfc75ddcb8d5b86021822ae187cacbe73a1))
+
+#### 0.12.0 (2019-08-06)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([8f1c40e8](https://github.com/lykmapipo/env/commit/8f1c40e89bc3c98fbae3b4ff8664e7abaff7c78a))
+  *  force latest version & audit fix ([93387682](https://github.com/lykmapipo/env/commit/93387682fa3111363b5a0175c850f84583db377d))
+  *  add test coverage deps ([3791d311](https://github.com/lykmapipo/env/commit/3791d311fa4a5306afdd6b0bb917b88a30c41e95))
+* **config:**  update eslint config ([bec234d6](https://github.com/lykmapipo/env/commit/bec234d67e174eae1c9e5a1d27c647aa3c260730))
+
+##### Code Style Changes
+
+*  ensure description jsdoc start with uppercase ([d805cb78](https://github.com/lykmapipo/env/commit/d805cb780beba102b6d55c8cf9e5649f0b13cd20))
+*  fix jsdoc lint rules ([6fcd0ede](https://github.com/lykmapipo/env/commit/6fcd0edea5703f0f9429055983d644012c1e74c8))
+
+#### 0.11.1 (2019-07-26)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([b2caab03](https://github.com/lykmapipo/env/commit/b2caab0340c013d5ae8e5671c859151d92e9e385))
+
+#### 0.11.0 (2019-07-21)
+
+##### New Features
+
+*  allow get unique sorted string ([1590b031](https://github.com/lykmapipo/env/commit/1590b03119fc6f699d9eb5ddbb3d3397e5e6d280))
+
+#### 0.10.0 (2019-07-20)
+
+##### New Features
+
+*  add getObject helper ([18324331](https://github.com/lykmapipo/env/commit/18324331ae495f113f099f5faf9cf8d75e6c3fb6))
+
+##### Code Style Changes
+
+*  improve getObject jsdocs ([b971dde4](https://github.com/lykmapipo/env/commit/b971dde4222c91c28550bdb1f60b92d51786c3a5))
+
+#### 0.9.7 (2019-07-20)
+
+#### 0.9.6 (2019-07-20)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([a9dbf4f1](https://github.com/lykmapipo/env/commit/a9dbf4f1f16a43b819dc1273f3febd9eb9683923))
+  *  add test coverage deps ([e0784cf9](https://github.com/lykmapipo/env/commit/e0784cf93109a8dde1f5b2b621016d0ed8f02b2d))
+
+##### Documentation Changes
+
+*  add coverage status badge ([ce285072](https://github.com/lykmapipo/env/commit/ce285072740e898a3f8375908a979d315442d2d4))
+
+#### 0.9.5 (2019-07-06)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([ba68ee41](https://github.com/lykmapipo/env/commit/ba68ee4123af25450645bf05c3c9c4b70d986c71))
+
+#### 0.9.4 (2019-06-27)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([2438779e](https://github.com/lykmapipo/env/commit/2438779eb9aefd0f688abd44577d2f40b3bdfb0e))
+
+#### 0.9.3 (2019-06-22)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([233d479a](https://github.com/lykmapipo/env/commit/233d479afc5bc90dca24aeea698c6293251005e6))
+
+#### 0.9.2 (2019-06-19)
+
+#### 0.9.1 (2019-06-16)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([2a929738](https://github.com/lykmapipo/env/commit/2a9297387bc36a56dc6c3dcb4504ea7bef24e47b))
+
+#### 0.8.2 (2019-06-13)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([82b85666](https://github.com/lykmapipo/env/commit/82b856669bd2791b7105e7a7b029a6bbc84cd904))
+
+#### 0.8.1 (2019-06-09)
+
+#### 0.8.0 (2019-06-09)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([e78ea5f2](https://github.com/lykmapipo/env/commit/e78ea5f25c22ab01e7fddf4cb8fc3c2fdf438ded))
+  *  fix securit alerts ([ffc64aaf](https://github.com/lykmapipo/env/commit/ffc64aaf1f4eec68557a63f6d0db13f2c58804c8))
+
+##### Refactors
+
+*  remove environment set on load env ([856705ec](https://github.com/lykmapipo/env/commit/856705ecc12974e6bc726450476311d0cfbf6122))
+
+#### 0.7.10 (2019-06-08)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([459841c9](https://github.com/lykmapipo/env/commit/459841c9a3c81c8b71c3183640721b667ff6db41))
+* **build:**  refactor rollup extrenal to include peerDependencies ([3e06c7a6](https://github.com/lykmapipo/env/commit/3e06c7a61e61e32cee39071df875f92e93158a58))
+
+#### 0.7.9 (2019-06-02)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([798d18c9](https://github.com/lykmapipo/env/commit/798d18c950416da260f04286d9abc55843834638))
+
+#### 0.7.8 (2019-05-29)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([89f4b60c](https://github.com/lykmapipo/env/commit/89f4b60cfdc7ac029cf344d530ca9bd0a679517b))
+
+#### 0.7.7 (2019-05-20)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([8a194355](https://github.com/lykmapipo/env/commit/8a194355d3130bd8d0bc8e075ada8fe4479d6b3c))
+
+#### 0.7.6 (2019-05-12)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([26551b7d](https://github.com/lykmapipo/env/commit/26551b7da5a17c4f0a8dfbb562ceb9fda93708b4))
+
+#### 0.7.5 (2019-05-08)
+
+##### Chores
+
+* **ci:**  add npm test script ([899ed1db](https://github.com/lykmapipo/env/commit/899ed1db4a37786afeea08701df3aaf9db3d055c))
+* **deps:**  force latest version & audit fix ([287a2adc](https://github.com/lykmapipo/env/commit/287a2adce4d7803778996528495c20acb27a2f09))
+* **.npmrc:**  prevent npm version to commit and tag version ([92986c58](https://github.com/lykmapipo/env/commit/92986c5817f1469414015b79f65e1a9e2a37e43d))
+
+#### 0.7.4 (2019-04-30)
+
+##### Chores
+
+* **ci:**  configure commit lint script in travis ([70cc2ad2](https://github.com/lykmapipo/env/commit/70cc2ad2bcebfe428d4e4f424386150395af48e0))
+* **deps:**  force latest version & audit fix ([631176db](https://github.com/lykmapipo/env/commit/631176db18c6bf26689c03136665343d7d5bf1aa))
+
+#### 0.7.3 (2019-04-10)
+
+##### Chores
+
+*  add documentation generator tasks ([487db6c1](https://github.com/lykmapipo/env/commit/487db6c1f281949b52094e0722a404dde0ab7f4d))
+*  force latest dependencies ([c763758e](https://github.com/lykmapipo/env/commit/c763758e6fb37e8cfb5499267930db5ec2f1233b))
+
+##### Documentation Changes
+
+*  generate latest documentation ([3a63c6c1](https://github.com/lykmapipo/env/commit/3a63c6c15015afda365988968dc87274e28d484d))
+*  add code of conduct and cotributing guide ([62aa79e3](https://github.com/lykmapipo/env/commit/62aa79e334152f60a8ff1cb6a4357f2960071597))
+
 #### 0.7.2 (2019-03-22)
 
 ##### Documentation Changes

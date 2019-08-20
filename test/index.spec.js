@@ -1,17 +1,17 @@
-/* dependencies */
 import path from 'path';
 import { expect } from 'chai';
-
-/* declarations */
 import {
   get,
   set,
+  clear,
   getNumber,
   getArray,
   getString,
   getStrings,
+  getStringSet,
   getNumbers,
   getBoolean,
+  getObject,
   is,
   isTest,
   isProduction,
@@ -19,6 +19,8 @@ import {
   isLocal,
   isHeroku,
   apiVersion,
+  getLocale,
+  getCountryCode,
 } from '../src/index';
 
 // set env
@@ -30,6 +32,7 @@ process.env.DEFAULT_CITY = 'Dar es salaam';
 process.env.DEFAULT_AGE = 14;
 process.env.ALLOWED_AGES = '14,15, 16';
 process.env.CONTENT_TYPES = 'FAQ,Tariff';
+process.env.CATEGORIES = 'A,B,B,C';
 
 describe('env', () => {
   it('should be able to get raw value', () => {
@@ -49,6 +52,14 @@ describe('env', () => {
     const value = get('Any', 'Any');
     expect(value).to.exist;
     expect(value).to.be.equal('Any');
+  });
+
+  it('should be able to clear environment variables', () => {
+    process.env.ONE = 1;
+    process.env.TWO = 1;
+    clear('ONE', 'TWO');
+    expect(process.env.ONE).to.not.exist;
+    expect(process.env.TWO).to.not.exist;
   });
 
   it('should be able to get string value', () => {
@@ -121,6 +132,27 @@ describe('env', () => {
     expect(value).to.be.eql([14, 15, 16]);
   });
 
+  it('should be able to get array of unique strings', () => {
+    const value = getStringSet('CATEGORIES');
+    expect(value).to.exist;
+    expect(value).to.be.an('array');
+    expect(value).to.be.eql(['A', 'B', 'C']);
+  });
+
+  it('should be able to get plain object', () => {
+    let value = getObject('OBJECT');
+    expect(value).to.exist;
+    expect(value).to.be.an('object');
+    expect(value).to.be.eql({
+      lead: { ref: 'Person', autopopulate: { select: { name: 1 } } },
+    });
+
+    value = getObject('OBJECT_NOT_EXIST');
+    expect(value).to.exist;
+    expect(value).to.be.an('object');
+    expect(value).to.be.eql({});
+  });
+
   it('should be able to get base path', () => {
     const value = get('BASE_PATH');
     expect(value).to.exist;
@@ -186,5 +218,39 @@ describe('env', () => {
     expect(apiVersion({ minor: true })).to.be.equal('v1.0');
     expect(apiVersion({ patch: true })).to.be.equal('v1.0.0');
     expect(apiVersion({ version: 2 })).to.be.equal('v2');
+  });
+
+  it('should be able to compute locale from os', () => {
+    const locale = getLocale();
+    expect(locale).to.exist;
+  });
+
+  it('should be able to compute locale from env', () => {
+    const envLocale = process.env.DEFAULT_LOCALE;
+    process.env.DEFAULT_LOCALE = 'sw';
+    const locale = getLocale();
+    expect(locale).to.exist.and.be.equal('sw');
+    process.env.DEFAULT_LOCALE = envLocale;
+  });
+
+  it('should be able to compute country code from os', () => {
+    const countryCode = getCountryCode();
+    expect(countryCode).to.exist;
+  });
+
+  it('should be able to compute country code from os', () => {
+    const envCountryCode = process.env.DEFAULT_COUNTRY_CODE;
+    delete process.env.DEFAULT_COUNTRY_CODE;
+    const countryCode = getCountryCode();
+    expect(countryCode).to.exist;
+    process.env.DEFAULT_COUNTRY_CODE = envCountryCode;
+  });
+
+  it('should be able to compute country code from env', () => {
+    const envCountryCode = process.env.DEFAULT_COUNTRY_CODE;
+    process.env.DEFAULT_COUNTRY_CODE = 'TZ';
+    const countryCode = getCountryCode();
+    expect(countryCode).to.exist.and.be.equal('TZ');
+    process.env.DEFAULT_COUNTRY_CODE = envCountryCode;
   });
 });
